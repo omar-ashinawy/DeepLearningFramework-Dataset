@@ -1,2 +1,3 @@
 /.vscode
 /idx2numpy
+/cifar10.py
