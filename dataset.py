@@ -39,7 +39,7 @@ class Mnist(Dataset):
         return len(self.images)
     def __iter__(self):
         self.__index = 0
-        return iter(self.images, self.labels)
+        return zip(self.images, self.labels)
     def __next__(self):
         print("next")
         if self.__index <= self.__len__():
